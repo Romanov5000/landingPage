@@ -1,0 +1,48 @@
+
+@import "./vars/vars.less";
+@import "./fonts/fonts.less";
+@import "./header/header.less";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0;
+}
+.blocks{
+    display: flex;
+    justify-content: space-between;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.title{
+    font-family:'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+a{
+
+    &:hover{
+        color:@white;
+        text-decoration: none;
+    }
+    &:focus{
+        color: @white;
+        text-decoration: none;
+        outline: none;
+    }
+}
+.scale{
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
