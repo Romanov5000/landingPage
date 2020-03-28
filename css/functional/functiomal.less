@@ -1,0 +1,41 @@
+// out: false
+
+
+.section_functions{
+    padding: 7.5% 3.7%;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+    @media @md-breakpoint{
+        flex-direction: column;
+        width: 400%;}
+        &:first-child{
+            margin-bottom: 0;
+    }
+    &:first-child{
+        margin-bottom: 6.7%;
+    }
+    .block{
+        text-align: center;
+        width: 25%;
+        
+           
+        img{
+            margin-bottom: 8%;
+        }
+        .title{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: @black;
+            margin-bottom: 5%;
+        }
+        p{
+            color: @grey;
+            @media @md-breakpoint{
+                margin-bottom: 15%;
+            }
+        }
+    }
+}
