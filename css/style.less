@@ -3,46 +3,32 @@
 @import "./fonts/fonts.less";
 @import "./header/header.less";
 
-*{
-    margin: 0;
-    padding: 0;
-}
-.container{
-    max-width: 1900px;
+.main_container{
+    font-size: 14px;
+    max-width: 135.7rem;
     margin: 0 auto;
-    padding: 0;
 }
-.blocks{
-    display: flex;
-    justify-content: space-between;
-}
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0rem;
-}
-.title{
-    font-family:'Raleway', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+.button{
     text-transform: uppercase;
-    text-decoration: none;
-
+    color: @white;
+    padding: 1.3rem 3.2rem;
+    background-color: @tomato;
+    border-radius: 0.2rem;
+    display: inline-block;
 }
+
+
 a{
+    transition: 1s;
 
     &:hover{
         color:@white;
         text-decoration: none;
+        transform: scale(1.1);
     }
     &:focus{
         color: @white;
         text-decoration: none;
         outline: none;
-    }
-}
-.scale{
-    transition: 1s;
-    &:hover{
-        transform: scale(1.1);
     }
 }

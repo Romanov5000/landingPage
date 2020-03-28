@@ -1,55 +1,81 @@
 // out: false
 
 
-.section_header{
-    background-image:url(../../img/header_img.png);
-}
 
-.header{
-       padding: 2% 19.2%;
-    .blocks{
-    
-        li{
-            list-style: none;
-            margin-right: 60px;
-            margin-bottom: 0rem;
-            &:last-child{
-                margin-right: 0px;
-                
+.header_section {
+    background-image: url(../../img/header_img.png);
+    background-size: cover;
+    header {
+        border-bottom: 1px solid @grey;
+        padding: 2.1rem 0;
+        margin-bottom: 10rem;
+        @media @md-breakpoint{
+            margin-bottom: 1rem; 
+            padding: 1rem 0;
+        }
+
+        .main_nav {
+            @media @md-breakpoint {
+                flex-direction: column;
+                 
             }
-            .title{
+            a{
+                text-transform: uppercase;
+                margin-left: 3.1rem;
                 color: @white;
+                @media @md-breakpoint {
+                    margin-left: 0;
+                }
             }
-        } 
+        }
     }
-}
-.section_favorite{
-    color: @white;
-    text-align: center;
-     padding: 4% 27% 8%;
-
-    .text_section_favorite{
-    
+    .main_block {
+        text-align: center;
         h1{
+            margin-bottom: 2.8rem;
+            padding: 0 5rem;
             text-transform: uppercase;
-            margin-bottom: 2.1%;
+            @media @md-breakpoint{
+                margin-bottom: 1rem;
+                padding: 0;
+            }
         }
         p{
-            font-size: 23px;
-        line-height: 33px;
-        margin-bottom: 4.1%;
+            color: @white;
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            margin-bottom: 5rem;
+            padding: 0 7rem;
+            @media @md-breakpoint{
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 1rem;
+            padding: 0 1.5rem;
+            }
+        }
+        .button{
+            margin-bottom: 11rem;
+            @media @md-breakpoint{
+                margin-bottom: 1rem
+            }
         }
     }
-    .bottom{
-        a{
-            background-color: @tomato;
-            border: none;
-            padding: 2.2% 6.3%;
-            p{
-                font-size: 13px;
-            line-height: 21px;
-            text-transform: uppercase;
-            }
+}
+
+
+.logo {
+    max-width: 80%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    img {
+        width: 80%;
+    }
+   
+    @media @md-breakpoint {
+        max-width: 100%;
+        img {
+            width: 100%;
         }
     }
 }
