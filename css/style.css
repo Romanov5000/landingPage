@@ -28,12 +28,18 @@ h1 {
     line-height: 2rem;
   }
 }
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2d3033;
+  margin-bottom: 5%;
+}
 .header_section {
   background-image: url(../../img/header_img.png);
   background-size: cover;
 }
 .header_section header {
-  border-bottom: 1px solid #6c7279;
+  border-bottom: 0.014rem solid #6c7279;
   padding: 3% 0;
   margin-bottom: 11.5%;
 }
@@ -126,9 +132,6 @@ h1 {
 }
 .blocks .block .title {
   text-transform: uppercase;
-  font-weight: 600;
-  color: #2d3033;
-  margin-bottom: 5%;
 }
 .blocks .block p {
   color: #6c7279;
@@ -137,6 +140,59 @@ h1 {
   .blocks .block p {
     margin-bottom: 15%;
   }
+}
+.section_product_name {
+  text-align: center;
+}
+.blocks_name {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .blocks_name {
+    flex-direction: column;
+  }
+}
+.blocks_name .block_name {
+  border: 0.017rem solid #fff;
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .blocks_name .block_name {
+    width: 100%;
+    position: relative;
+  }
+}
+.blocks_name .block_name .product img {
+  width: 100%;
+}
+.blocks_name .block_name .product_hover {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  background-color: #e84545;
+  bottom: 0%;
+  opacity: 0%;
+  transition: 1s;
+}
+@media (max-width: 768px) {
+  .blocks_name .block_name .product_hover {
+    width: 100%;
+  }
+}
+.blocks_name .block_name .product_hover .text_product {
+  position: absolute;
+  left: calc(50% - 5rem);
+  bottom: calc(50% - 2rem);
+}
+.blocks_name .block_name .product_hover .text_product .title {
+  color: #fff;
+}
+.blocks_name .block_name .product_hover .text_product p {
+  color: #fff;
+}
+.blocks_name .block_name .product_hover:hover {
+  opacity: 70%;
 }
 .main_container {
   font-size: 14px;
