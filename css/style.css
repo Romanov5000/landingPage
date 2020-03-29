@@ -194,6 +194,38 @@ h1 {
 .blocks_name .block_name .product_hover:hover {
   opacity: 70%;
 }
+.section_personnel {
+  padding: 6.5% 0;
+}
+@media (max-width: 768px) {
+  .section_personnel {
+    text-align: center;
+  }
+}
+.personnel .photo_rersonnel {
+  margin-bottom: 5%;
+}
+.personnel .name_personnel {
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+  font-weight: 600;
+  color: #2d3033;
+}
+.personnel .title {
+  color: #e84545;
+}
+.personnel p {
+  color: #6c7279;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .personnel {
+    margin-bottom: 10%;
+  }
+  .personnel:last-child {
+    margin-bottom: 0;
+  }
+}
 .main_container {
   font-size: 14px;
   max-width: 135.7rem;

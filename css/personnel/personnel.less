@@ -1,0 +1,38 @@
+// out: false
+
+.section_personnel{
+    padding: 6.5% 0;
+    @media @md-breakpoint{
+        text-align: center;
+    }
+}
+
+
+.personnel{
+
+    .photo_rersonnel{
+        margin-bottom: 5%;
+    }
+    
+    .name_personnel{
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+        font-weight: 600;
+        color: @black;
+    }
+    .title{
+        color: @tomato;
+        
+    }
+    p{
+        color: @grey;
+        margin-bottom: 5%;
+    }
+    @media @md-breakpoint{
+        margin-bottom: 10%;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+        
+}
