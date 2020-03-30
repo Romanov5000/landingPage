@@ -226,6 +226,79 @@ h1 {
     margin-bottom: 0;
   }
 }
+.section_quote {
+  position: relative;
+}
+.blocks {
+  display: flex;
+}
+.blocks:first-child {
+  margin-bottom: 0;
+}
+.blocks .photo {
+  width: 50%;
+}
+.blocks .quote {
+  background-color: #53354a;
+  width: 50%;
+  padding: 3% 9.5% 6% 5%;
+}
+@media (max-width: 768px) {
+  .blocks .quote {
+    width: 30%;
+    padding: 1% 6.5% 3% 2%;
+    text-align: center;
+  }
+}
+.blocks .quote .quote_text {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: 'Cardo', serif;
+  margin-bottom: 2.5%;
+}
+@media (max-width: 768px) {
+  .blocks .quote .quote_text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.blocks .quote .title {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .blocks .quote .title {
+    font-size: 0.5rem;
+  }
+}
+.scroll {
+  height: 80%;
+}
+.size_photo {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .size_photo {
+    width: 50%;
+  }
+}
+.indicaror_castom {
+  left: 46%;
+  bottom: 13%;
+}
+@media (max-width: 768px) {
+  .indicaror_castom {
+    left: 0;
+    bottom: 0;
+  }
+}
+.indicaror_castom .castom {
+  background-clip: border-box;
+  width: 1rem;
+  border-radius: 50%;
+  height: 0;
+  margin-left: 2%;
+}
 .main_container {
   font-size: 14px;
   max-width: 135.7rem;
