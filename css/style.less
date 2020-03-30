@@ -7,6 +7,7 @@
 @import "./personnel/personnel.less";
 @import "./quote/quote.less";
 @import "./download_section/download_section.less";
+@import "./requisies/requisies.less";
 
 .main_container{
     font-size: 14px;
@@ -35,5 +36,18 @@ a{
         color: @white;
         text-decoration: none;
         outline: none;
+    }
+}
+
+.sotial{
+    a{
+        font-size: 1.5rem;
+        border: 0.1rem solid @social;
+        color: @social;
+        padding: 0.7rem;
+        border-radius: 0.2rem;
+        &:first-child{
+            padding: 0.7rem 1rem 0.7rem;
+        }
     }
 }

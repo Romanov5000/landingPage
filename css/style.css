@@ -324,6 +324,44 @@ h1 {
 .download_section .button {
   padding: 1% 7%;
 }
+.section_requisies {
+  background-color: #3a3e64;
+  text-align: center;
+  padding: 3.7% 0 4.5%;
+}
+@media (max-width: 768px) {
+  .section_requisies .blocks {
+    width: 100%;
+  }
+}
+.section_requisies .blocks .location {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .section_requisies .blocks .location {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .section_requisies .blocks .location:last-child {
+    margin-bottom: 0%;
+  }
+}
+.section_requisies .blocks .location .title {
+  color: #fff;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .section_requisies .blocks .location .title {
+    margin-bottom: 2%;
+  }
+}
+.section_requisies .blocks .location .sotial a {
+  border: 0.1rem solid #fff;
+  color: #fff;
+}
+.section_requisies .blocks .location p {
+  color: #6c7279;
+}
 .main_container {
   font-size: 14px;
   max-width: 135.7rem;
@@ -349,4 +387,14 @@ a:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
+}
+.sotial a {
+  font-size: 1.5rem;
+  border: 0.1rem solid #c6cacc;
+  color: #c6cacc;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+}
+.sotial a:first-child {
+  padding: 0.7rem 1rem 0.7rem;
 }
