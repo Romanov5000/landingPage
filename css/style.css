@@ -362,6 +362,28 @@ h1 {
 .section_requisies .blocks .location p {
   color: #6c7279;
 }
+.footer {
+  background-color: #313454;
+  text-align: center;
+  padding: 1.5% 0;
+}
+.footer p {
+  color: #6c7279;
+}
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.5rem;
+  }
+  .footer p:first-child {
+    margin-bottom: -2%;
+  }
+}
+.footer p .fa {
+  color: #e84545;
+}
+.footer p .author {
+  color: #fff;
+}
 .main_container {
   font-size: 14px;
   max-width: 135.7rem;

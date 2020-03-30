@@ -1,0 +1,25 @@
+// out: false
+
+
+.footer{
+
+    background-color: @footer_color;
+    text-align: center;
+    padding: 1.5% 0;
+    p{
+        color: @grey;
+        @media @md-breakpoint{
+            font-size: 0.5rem;
+            &:first-child{
+                margin-bottom: -2%;
+            }
+        }
+
+        .fa{
+            color: @tomato;
+        }
+        .author{
+            color: @white;
+        }
+    }
+}
