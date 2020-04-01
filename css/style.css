@@ -35,7 +35,7 @@ h1 {
   margin-bottom: 5%;
 }
 .header_section {
-  background-image: url(../../img/header_img.png);
+  background-image: url(../img/header_img.png);
   background-size: cover;
 }
 .header_section header {
@@ -247,7 +247,7 @@ h1 {
 .blocks .quote {
   background-color: #53354a;
   width: 50%;
-  padding: 3% 9.5% 6% 5%;
+  padding: 3% 9.5% 0% 5%;
 }
 @media (max-width: 540px) {
   .blocks .quote {
